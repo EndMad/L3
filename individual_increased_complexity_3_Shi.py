@@ -17,4 +17,4 @@ if __name__ == '__main__':
         a *= 2 * x * n / (2 * n + 1) ** 2
         S += a
         n += 1
-print(f"Shi({x}) = {S}")
+    print(f"Shi({x}) = {S}")
