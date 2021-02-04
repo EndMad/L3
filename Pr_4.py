@@ -6,7 +6,6 @@ import sys
 
 if __name__ == '__main__':
     a = float(input("Value of a? "))
-
     if a < 0:
         print("Illegal value of a", file=sys.stderr)
         exit(1)
@@ -16,5 +15,4 @@ if __name__ == '__main__':
         x = (x + a / x) / 2
         if math.fabs(x - xp) < eps:
             break
-
     print(f"x = {x}\nX = {math.sqrt(a)}")
