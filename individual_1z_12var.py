@@ -9,19 +9,14 @@
 # Сколько он заплатил?
 
 if __name__ == '__main__':
-
     x1 = int(input("Цена рулона обоев "))
     x2 = int(input("Цена банки краски "))
-
     priobrel = (x1*8) + (x2*2)
     print("Цена без скидки ", priobrel)
-
     priobrel3 = priobrel - priobrel*0.03
     priobrel4 = priobrel - priobrel*0.05
     priobrel5 = priobrel - priobrel*0.07
     priobrel6 = priobrel - priobrel*0.09
-
-
     if 200 < priobrel < 500:
         print("Ваша скидка 3%")
         print("К оплате ", priobrel3)
@@ -34,6 +29,4 @@ if __name__ == '__main__':
     elif priobrel > 1000:
         print("Ваша скидка 9%")
         print("К оплате ", priobrel6)
-
-
-print("Спасибо за покупку!")
+    print("Спасибо за покупку!")
